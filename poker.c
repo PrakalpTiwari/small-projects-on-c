@@ -33,7 +33,7 @@ printf("\n\n");
 
 
 
-/*  num[] - stores the original non repeating cards in the form of numbers from 1 to 52
+/*      num[] - stores the original non repeating cards in the form of numbers from 1 to 52
 	num_in-suit[][] - stores the number of cards in each suit for each player
 	num_in_rank[][] - stores the number of cards in each rank for each player, there are overall 13 ranks starting from 2 and ending at 				ace
 	pattern[][] - used for checking the various patterns and stores each pattern in the form of 0 (not present) and 1 (present)
@@ -52,12 +52,12 @@ printf("\n\n");
  ***********************************************************************************/
 void assign(void) {
 	    /****************************************
-         * assigns suit to every digitised card *
-         ****************************************/
+             * assigns suit to every digitised card *
+             ****************************************/
 
 		suit = (num[k]-1)/13;
 		switch(suit) {                           
-            case 0: num_in_suit[i][suit]++;                                        
+                     	case 0: num_in_suit[i][suit]++;                                        
 				break;
 			case 1: num_in_suit[i][suit]++;
 				break;
@@ -183,7 +183,7 @@ void betting(void) {
  * function for printing cards *
  *******************************/
 void print(void) {
-	    /****************************************
+	/****************************************
          * prints symbol for each suit for table*
          ****************************************/
 		suit = (num[k]-1)/13;
